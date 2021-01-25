@@ -27,12 +27,12 @@ module.exports.handler = async (event)=>{
     const images = await getImagesPerGroup(groupId)
 
     return {
-        statusCode: 201,
+        statusCode: 200,
         headers:{
             'Access-Control-Allow-Origin':'*'
         },
         body: JSON.stringify({
-            items: []
+            items: images
         })
     }
 }
