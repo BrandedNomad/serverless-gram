@@ -1,0 +1,96 @@
+
+service: serverless-udagram2
+
+frameworkVersion: '2'
+
+#plugins:
+#  - serverless-regvalidator-plugin
+#  - serverless-aws-documentation
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'ap-southeast-1'}
+
+  environment:
+    GROUPS_TABLE: groups-${self:provider.stage}
+    IMAGES_TABLE: images-${self:provider.stage}
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Scan
+        - dynamodb:PutItem
+      Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.GROUPS_TABLE}
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+      Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.IMAGES_TABLE}
+
+
+functions:
+
+  getGroups:
+    handler: src/lambda/http/getGroups.handler
+    events:
+      - http:
+          path: groups
+          method: get
+          cors: true
+
+  createGroup:
+    handler: src/lambda/http/createGroup.handler
+    events:
+      - http:
+          path: groups
+          method: post
+          cors: true
+          request:
+            schema:
+              application/json: ${file(models/create-group-request.json)}
+
+resources:
+
+  Resources:
+
+    RequestBodyValidator:
+      Type: AWS::ApiGateway::RequestValidator
+      Properties:
+        Name: 'request-body-validator'
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        ValidateRequestBody: true
+        ValidateRequestParameters: true
+
+    GroupsDynamoDBTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
+        TableName: ${self:provider.environment.GROUPS_TABLE}
+
+    ImagesDynamoDBTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+            - AttributeName: groupId
+              AttributeType: S
+            - AttributeName: timestamp
+              AttributeType: S
+        KeySchema:
+          - AttributeName: groupId
+            KeyType: HASH #partition key
+          - AttributeName: groupId
+            KeyType: RANGE #sort key
+        BillingMode: PAY_PER_REQUEST
+        TableName: ${self:provider.environment.IMAGES_TABLE}
+
+

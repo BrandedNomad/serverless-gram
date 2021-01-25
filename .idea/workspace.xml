@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3720877-0376-4dda-9a83-6d3828b34d51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../course-02/project/image-filter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/create-group-request.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/exercises/udacity-c2-basic-server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../course-02/exercises/udacity-c2-basic-server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/exercises/udacity-c2-basic-server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../course-02/exercises/udacity-c2-basic-server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/exercises/udacity-c2-basic-server/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../course-02/exercises/udacity-c2-basic-server/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/cloud-cdnd-c2-final.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/deployment_screenshots/EXAMPLE_PLEASE_MAKE_YOUR_OWN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/src/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/src/server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/src/util/util.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../course-02/project/image-filter-starter-code/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-1/starter-code/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-1/starter-code/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-1/starter-code/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-1/starter-code/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-1/starter-code/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-1/starter-code/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-2/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-2/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-2/client/src/api/groups-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-2/client/src/api/groups-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-2/client/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-2/client/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson-2/solution/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson-2/solution/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1nTDmNBxNAA4BfQ5npAMlXdc9GD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3720877-0376-4dda-9a83-6d3828b34d51" name="Default Changelist" comment="" />
+      <created>1611405345247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611405345247</updated>
+      <workItem from="1611405346456" duration="3145000" />
+      <workItem from="1611478465477" duration="10327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
